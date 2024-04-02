@@ -35,6 +35,8 @@
 // are at the same level.
 $GLOBALS['XHPROF_LIB_ROOT'] = dirname(__FILE__) . '/../xhprof_lib';
 
+putenv('XHPROF_OUTPUT_DIR=' . realpath(dirname(__FILE__)) . '/../tmp');
+
 require_once $GLOBALS['XHPROF_LIB_ROOT'] . '/display/xhprof.php';
 
 // param name, its type, and default value
